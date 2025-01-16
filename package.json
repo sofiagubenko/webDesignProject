@@ -1,0 +1,18 @@
+{
+  "name": "web_main2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve index.html exhibition*.html --port 1234",
+    "build": "parcel build index.html exhibition*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  }
+}

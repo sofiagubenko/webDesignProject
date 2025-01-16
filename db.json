@@ -1,0 +1,49 @@
+{
+    "exhibitions": [
+      {
+        "id": 1,
+        "mainImage": "public/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "title": "Гармонія форм: Олександр Мурашко, Іван Марчук",
+        "dates": "Липень 1, 2024 – Липень 1, 2025",
+        "location": "West Building, Ground Floor — Gallery G29",
+        "description": "Трансформування через призму гармонії форм.",
+        "mainInfo": "Роки, коли суспільство розвивалось у складних обставинах, породили нову хвилю художнього осмислення простору та форм. Виставка 'Гармонія форм' демонструє роботи Олександра Мурашка та Івана Марчука, де художники досліджують синтез традиційного та модерного підходів. Їх мистецтво поєднує часи та стилі, викликаючи нові емоції у глядачів.",
+        "image1": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image2": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image3": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image4": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image5": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image6": "/images/KaterynaBilokur/FlowersOfUkraine.png"
+      },
+      {
+        "id": 2,
+        "mainImage": "public/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "title": "Магія фольклору: Марія Примаченко, Катерина Білокур",
+        "dates": "Травень 22, 2024 – Лютий 12, 2025",
+        "location": "West Building, Ground Floor — Gallery G29",
+        "description": "Досліджуйте, як традиції знаходять відображення в мистецтві.",
+        "mainInfo": "1970-ті роки були десятиліттям творчої свободи та естетичних пошуків у мистецтві. 'Магія фольклору' переносить нас у той час через уявлення Приймаченко та Білокур про народні казки та паттерни природи. Їх мистецтво розширює кордони уяви, а гостьові витвори додають унікальності цій виставці.",
+        "image1": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image2": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image3": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image4": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image5": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image6": "/images/KaterynaBilokur/FlowersOfUkraine.png"
+      },
+      {
+        "id": 3,
+        "mainImage": "public/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "title": "Весняні барви: Іван Марчук, Катерина Білокур",
+        "dates": "Жовтень 6, 2024 – Березень 6, 2025",
+        "location": "West Building, Ground Floor — Gallery G29",
+        "description": "Відкрийте для себе, як весняні мотиви надихають мистецтво.",
+        "mainInfo": " Зануртесь у чудовий світ весняного натхнення через виставку 'Весняні барви'. 1970-ті роки стали періодом перебудови в українському мистецтві, коли художники почали по-новому розуміти природу та культуру. Роботи Івана Марчука та Катерини Білокур відображають цей процес — їх кольорові гами, чуттєвість та майстерність створюють гармонію, доповнену витворами сучасних митців.",
+        "image1": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image2": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image3": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image4": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image5": "/images/KaterynaBilokur/FlowersOfUkraine.png",
+        "image6": "/images/KaterynaBilokur/FlowersOfUkraine.png"
+      }
+    ]
+  }

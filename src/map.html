@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map of Exhibitions</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #map-container {
+      height: 500px;
+      width: 100%;
+    }
+    #filters {
+      margin: 20px 0;
+      text-align: center;
+    }
+    #filters label, #filters select, #filters input {
+      margin-right: 10px;
+    }
+    #message {
+      color: red;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="">
+    </a>
+    <nav class="menu">
+      <ul class="navigation">
+        <li>Вхід завжди вільний</li>
+        <li>10:00 до 5:00</li>
+        <li><a href="map.html">Розташуваня</a></li>
+      </ul>
+      <button class="pop-up button"> navigation </button>
+    </nav>
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="map-section">
+      <h2>Map</h2>
+      <div id="map-container"></div>
+      <div id="filters">
+        <label for="city-select">Choose a city:</label>
+        <select id="city-select">
+          <option value="">All Cities</option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Lviv">Lviv</option>
+          <option value="Odessa">Odessa</option>
+        </select>
+        <label for="date-select">Choose a date:</label>
+        <input type="date" id="date-select" />
+      </div>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Залишайся з нами</h2>
+    <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
+    <form action="/subscribe" method="post">
+      <input type="email" name="email" placeholder="Введи свою пошту" required>
+      <button class="pop-up button">Sign Up</button>
+    </form>
+    <p class="bold">Зв’яжись з нами</p>
+    <p>+(380) 675 473 568</p>
+    <p>galeryofart@gmail.com</p>
+    <p class="bold">Заплануй візит</p>
+    <ul class="links">
+      <li><a href="events.html" target="_blank">Події</a></li>
+      <li><a href="map.html" target="_blank">Карта</a></li>
+      <li><a href="history.html" target="_blank">Історії</a></li>
+    </ul>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="scripts/map.js"></script>
+</body>
+</html>
