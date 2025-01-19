@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/IvanMarchuk.801320e2.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul class="navigation">
-                <li>Вхід завжди вільний</li>
-                <li>10:00 до 5:00</li>
-                <li><a href="/map.html">Розташування</a></li>
-            </ul>
-            <button class="pop-up button">navigation</button>
-        </nav>
-    </header>
+        <div class="header-info">
+          <div class="info-item">
+            <i class="icon-ticket"></i>
+            <span>Вхід завжди вільний</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-clock"></i>
+            <span>10:00 до 5:00</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-location"></i>
+            <a href="/map.html" target="_blank">Розташування</a>
+          </div>
+        </div>
+        <div class="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>   
+
 
     <section class="history-row">
-        <div class="col-pict">
-            <p>історія митця</p>
+        <div class="col-info">
+            <p class="">історія митця</p>
             <h1>Іван Марчук: Визнання Майстра</h1>
             <img src="/IvanMarchuk.03cf6acc.png" alt="Іван Марчук">
             <p>Один із найвизначніших сучасних українських художників, нарешті отримує належне визнання як на батьківщині, так і за її межами. Його унікальний стиль, який сам митець називає «пльонтанізмом», заворожує глядачів складною технікою, глибиною змістів та філософським підґрунтям. <br> Попри десятиліття творчого пошуку й новаторства, довгий час його роботи залишалися недооціненими через політичні й культурні обмеження радянської епохи. Лише у 21 столітті світ почав відкривати для себе силу його мистецтва, яке з'єднує традиції українського живопису з інноваційним баченням.<br> Сьогодні роботи Івана Марчука прикрашають найпрестижніші галереї та приватні колекції, а сам художник входить до списку «100 геніїв сучасності» за версією британської газети The Daily Telegraph. Його творчість — це не лише частина культурного надбання України, але й голос нації, який говорить про її багатогранність і невичерпний талант.</p>
@@ -27,17 +40,17 @@
     </section>
 
     <section class="arts">
-        <div class="artAutumnDay">
+        <div class="art">
             <h2>Осінній день</h2>
             <img src="/artAutumnDay.b152e62f.png" alt="Осінній день">
             <p>Поезія природи в золотисто-гарячих тонах осені. Гармонія кольорів, що захоплює тишу і тепло осіннього дня.</p>
         </div> 
-        <div class="WinterTale">
+        <div class="art">
             <h2>Зимова казка</h2>
             <img src="/artWinterTale.f056dd44.png" alt="Зимова казка">
             <p>Чарівність зими у мерехтінні снігу та туманного ранку. Картина про затишок і спокій природи.</p>
         </div> 
-        <div class="Awakening">
+        <div class="art">
             <h2>Пробудження</h2>
             <img src="/artAwakening.1bb09425.png" alt="Пробудження">
             <p>Загадкова мить пробудження природи крізь призму сюрреалізму. Експресивна композиція, яка передає відчуття нового початку.</p>
@@ -45,20 +58,29 @@
     </section>
 
     <footer>
-        <h2>Залишайся з нами</h2>
-        <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
-        <form action="/subscribe" method="post">
+        <div class="subscribe-section">
+          <h2>Залишайся з нами</h2>
+          <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
+          <form action="/subscribe" method="post">
             <input type="email" name="email" placeholder="Введи свою пошту" required="">
             <button class="pop-up button">Sign Up</button>
-        </form>
-        <p class="bold">Зв’яжись з нами</p>
-        <p>+(380) 675 473 568</p>
-        <p>galeryofart@gmail.com</p>
-        <p class="bold">Заплануй візит</p>
-        <ul class="links">
-            <li><a href="/events.html" target="_blank">Події</a></li>
-            <li><a href="/map.html" target="_blank">Карта</a></li>
-        </ul>
-    </footer>
+          </form>
+        </div>
+        <div class="contact-section">
+          <div class="box">
+            <p class="bold">Зв’яжись з нами</p>
+            <p>+(380) 675 473 568</p>
+            <p>galeryofart@gmail.com</p>
+          </div>
+          <div class="box">
+            <p class="bold">Заплануй візит</p>
+            <ul class="links">
+              <li><a href="/events.html" target="_blank">Події</a></li>
+              <li><a href="/map.html" target="_blank">Карта</a></li>
+              <li><a href="/history.html" target="_blank">Історії</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 <script src="/IvanMarchuk.51be85eb.js"></script></body>
 </html>

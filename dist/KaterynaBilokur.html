@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/IvanMarchuk.801320e2.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul class="navigation">
-                <li>Вхід завжди вільний</li>
-                <li>10:00 до 5:00</li>
-                <li><a href="/map.html">Розташування</a></li>
-            </ul>
-            <button class="pop-up button">navigation</button>
-        </nav>
-    </header>
+        <div class="header-info">
+          <div class="info-item">
+            <i class="icon-ticket"></i>
+            <span>Вхід завжди вільний</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-clock"></i>
+            <span>10:00 до 5:00</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-location"></i>
+            <a href="/map.html" target="_blank">Розташування</a>
+          </div>
+        </div>
+        <div class="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>   
 
     <section class="history-row">
-        <div class="col-pict">
+        <div class="col-info">
             <p>історія мисткині</p>
             <h1>Катерина Білокур: Поезія Квітів</h1>
             <img src="/KaterynaBilokur.16015e46.png" alt="Катерина Білокур">
@@ -27,17 +39,17 @@
     </section>
 
     <section class="arts">
-        <div class="artFlowersOfUkraine">
+        <div class="art">
             <h2>Квіти України</h2>
             <img src="/FlowersOfUkraine.fd407ef5.png" alt="Квіти України"> 
             <p>Розмаїття квітів, що є душею української культури. Велич і краса польових квітів у натюрморті.</p>
         </div> 
-        <div class="artSunflowers">
+        <div class="art">
             <h2>Соняшники</h2>
             <img src="/Sunflowers.240f38eb.png" alt="Соняшники"> 
             <p>Ода природній простоті й щирості. Картина, що випромінює тепло та сонячний настрій.</p>
         </div> 
-        <div class="artWildFlowers">
+        <div class="art">
             <h2>Польові мрії</h2>
             <img src="/artWildFlowers.b83a40dc.png" alt="Польові мрії"> 
             <p>Мрійливий погляд на квітучі лани України. Відображення багатства української природи.</p>
@@ -45,20 +57,29 @@
     </section>
 
     <footer>
-        <h2>Залишайся з нами</h2>
-        <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
-        <form action="/subscribe" method="post">
+        <div class="subscribe-section">
+          <h2>Залишайся з нами</h2>
+          <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
+          <form action="/subscribe" method="post">
             <input type="email" name="email" placeholder="Введи свою пошту" required="">
             <button class="pop-up button">Sign Up</button>
-        </form>
-        <p class="bold">Зв’яжись з нами</p>
-        <p>+(380) 675 473 568</p>
-        <p>galeryofart@gmail.com</p>
-        <p class="bold">Заплануй візит</p>
-        <ul class="links">
-            <li><a href="/events.html" target="_blank">Події</a></li>
-            <li><a href="/map.html" target="_blank">Карта</a></li>
-        </ul>
-    </footer>
+          </form>
+        </div>
+        <div class="contact-section">
+          <div class="box">
+            <p class="bold">Зв’яжись з нами</p>
+            <p>+(380) 675 473 568</p>
+            <p>galeryofart@gmail.com</p>
+          </div>
+          <div class="box">
+            <p class="bold">Заплануй візит</p>
+            <ul class="links">
+              <li><a href="/events.html" target="_blank">Події</a></li>
+              <li><a href="/map.html" target="_blank">Карта</a></li>
+              <li><a href="/history.html" target="_blank">Історії</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 <script src="/KaterynaBilokur.e574fa94.js"></script></body>
 </html>

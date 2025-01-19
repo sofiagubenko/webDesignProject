@@ -4,82 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--<link rel="stylesheet" href="./css/example.css">!-->
+    <link rel="stylesheet" href="/index.b10d73a7.css">
 </head>
 <body>
       <header>
-        <nav class="menu">
-            <ul class="navigation">
-                <li>Вхід завжди вільний</li>
-                <li>10:00 до 5:00</li>
-                <li><a href="/map.html">Розташуваня</a></li>
-            </ul>
-            <button class="pop-up button"> navigation </button>
-        </nav>
-      </header>
+        <div class="header-info">
+          <div class="info-item">
+            <i class="icon-ticket"></i>
+            <span>Вхід завжди вільний</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-clock"></i>
+            <span>10:00 до 5:00</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-location"></i>
+            <a href="/map.html" target="_blank">Розташування</a>
+          </div>
+        </div>
+        <div class="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header> 
 
-      <section class="main-slide row">
+
+      <section class="main-row">
         <div class="col info">
-            <a href="/exh-springColors.html" class="exh-link" target="_blank">
-              <h1>Весняні барви: Іван Марчук, Катерина Білокур</h1>
-              <img src="/FlowersOfUkraine.fd407ef5.png" alt="квіти україни">
-            </a>
-            <br>
-            <button class="pop-up button"> Now on View </button>
+          <h1>Весняні барви: Іван Марчук, Катерина Білокур</h1>
+          <img src="/FlowersOfUkraine.fd407ef5.png" alt="квіти україни">
+          <a href="/exh-springColors.html" class="exh-link" target="_blank"> Now on View </a>
         </div>
       </section>
      
+      <!--<section class="main-slide row">
+       <div class="card">
+          <h1>Весняні барви: Іван Марчук, Катерина Білокур</h1>
+          <div class="img-wrapper">
+            <img src="public/images/KaterynaBilokur/FlowersOfUkraine.png" alt="квіти україни">
+          </div>
+          <div class="content">
+              <a href="exh-springColors.html" class="exh-link" target="_blank"> Now on View </a>
+          </div>
+       </div>
+      </section>!-->
 
-      <section id="about">
+      <section class="about">
         <h3 class="left">Щодня з 10:00 до 17:00</h3>
         <h3 class="center">Вхід завжди вільний</h3>
         <h3 class="right">6th and Constitution Ave NW Washington, DC 20565</h3>
       </section>
 
-      <section class="exh-history">
-         <div class="exh-harmonyOfForms">
-            <a href="/exh-harmonyOfForms.html" class="exh-link" target="_blank">
-              <img src="/artPeasantFamily.35ec74fe.png" alt="Селянська родина">
-              <p>виставка</p>
-              <h2>Гармонія Форм: О. Мурашко, І. Марчук</h2>
-            </a>
-            <button class="pop-up button"> Now on View </button>
-          </div>
-          <div class="IvanMarchuk">
-            <a href="/IvanMarchuk.html" class="history-link" target="_blank">
-              <img src="/IvanMarchuk.03cf6acc.png" alt="Іван Марчук">
-              <p>історія митця</p>
-              <h2>Іван Марчук: Визанання Майстра</h2>
-            </a>
-            <button class="pop-up button"> Now on View </button>
-          </div>
-          <div class="OlexandrMurashko">
-            <a href="/OleksandrMurashko.html" class="history-link" target="_blank">
-              <img src="/OlexandrMurashko.4c0a5f32.png" alt="Олександр Мурашко">
-              <p>історія митця</p>
-              <h2>Олександр Мурашко: Відродження Генія</h2>
-            </a>
-            <button class="pop-up button"> Now on View </button>
-          </div>
-      </section> 
+      <section class="row">
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="/artPeasantFamily.35ec74fe.png" alt="Селянська родина">
+            </div>
+            <div class="content">
+                <p class="type">виставка</p>
+                <h2 class="title">Гармонія Форм: О. Мурашко, І. Марчук</h2>
+                <p class="description">Один із найвизначніших сучасних українських художників, нарешті отримує належне визнання...</p>
+                <a href="/exh-harmonyOfForms.html" class="exh-link" target="_blank"> Now on View </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="/IvanMarchuk.03cf6acc.png" alt="Іван Марчук">
+            </div>
+            <div class="content">
+                <p class="type">історія митця</p>
+                <h2 class="title">Іван Марчук: Визанання Майстра</h2>
+                <p class="description">Один із найвизначніших сучасних українських художників, нарешті отримує належне визнання...</p>
+                <a href="/IvanMarchuk.html" class="history-link" target="_blank"> Now on View </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="/OlexandrMurashko.4c0a5f32.png" alt="Олександр Мурашко">
+            </div>
+            <div class="content">
+                <p class="type">історія митця</p>
+                <h2 class="title">Олександр Мурашко: Відродження Генія</h2>
+                <p class="description">Один із найвизначніших сучасних українських художників, нарешті отримує належне визнання...</p>
+                <a href="/OleksandrMurashko.html" class="history-link" target="_blank"> Now on View </a>
+            </div>
+        </div>
+     </section> 
 
-      <footer>
+     <footer>
+      <div class="subscribe-section">
         <h2>Залишайся з нами</h2>
         <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
         <form action="/subscribe" method="post">
-            <input type="email" name="email" placeholder="Введи свою пошту" required="">
-            <button class="pop-up button">Sign Up</button>
+          <input type="email" name="email" placeholder="Введи свою пошту" required="">
+          <button class="pop-up button">Sign Up</button>
         </form>
-        <p class="bold">Зв’яжись з нами</p>
-        <p>+(380) 675 473 568</p>
-        <p>galeryofart@gmail.com</p>
-        <p class="bold">Заплануй візит</p>
-        <ul class="links">
+      </div>
+      <div class="contact-section">
+        <div class="box">
+          <p class="bold">Зв’яжись з нами</p>
+          <p>+(380) 675 473 568</p>
+          <p>galeryofart@gmail.com</p>
+        </div>
+        <div class="box">
+          <p class="bold">Заплануй візит</p>
+          <ul class="links">
             <li><a href="/events.html" target="_blank">Події</a></li>
             <li><a href="/map.html" target="_blank">Карта</a></li>
             <li><a href="/history.html" target="_blank">Історії</a></li>
-            <ul>
-          </ul>              
-        </ul>
-      </footer>     
+          </ul>
+        </div>
+      </div>
+    </footer>
 <script src="/web_main2.59712999.js"></script></body>
 </html>

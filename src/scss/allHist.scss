@@ -1,0 +1,39 @@
+@import 'mixin.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section.events-slide-row
+{
+    padding: 25;
+    h1 {
+        padding-bottom: 20px;
+    }
+}
+
+section.row {
+    justify-content: center;
+    padding: 25;
+    @include row-style;
+}
+
+@include footer((
+        sm: 768px,
+        xs: 480px
+));
+
+header {
+    @include header($bg-color: #000, $text-color: #fff, $icon-color: #f0a500);
+}

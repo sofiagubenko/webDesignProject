@@ -1,0 +1,62 @@
+@import 'mixin.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+@include history((
+  sm: 768px,
+  xs: 480px
+)) {
+  .history-row {
+    flex-direction: column;
+
+    .col-info {
+      flex: 1 1 100%;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      p:last-of-type {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .arts {
+    flex-direction: column;
+    .art {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@include footer((
+    sm: 768px,
+    xs: 480px
+));
+
+header {
+    @include header($bg-color: #000, $text-color: #fff, $icon-color: #f0a500);
+}

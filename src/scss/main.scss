@@ -1,0 +1,87 @@
+@use 'vars' as *;
+@import 'mixin.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    @include header($bg-color: #000, $text-color: #fff, $icon-color: #f0a500);
+}
+
+section {
+    padding: 0 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+
+section.main-row {
+    padding-top: 20px;
+    max-width: 600px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        overflow: hidden; 
+        border-radius: 3px 3px 0 0;
+        padding: 10px;
+        height: auto;
+        overflow: hidden; 
+        border-radius: 3px 3px 3px 3px;
+        display: block; 
+        margin: 0 auto; 
+    }
+    a{
+        display: inline-block;
+        padding: 10px 25px;
+        border: 2px solid rgb(67, 63, 63);
+        box-sizing: border-box;
+        border-radius: 1.5px;
+        color: black;
+        font-weight: bold;
+        transition: background-color 0.2s;
+    }
+    a:hover {
+            background-color: #00D6A4;
+    }
+}
+
+section.about {
+    padding-bottom: 30px;
+    h3 {
+        padding-bottom: 4px
+    }
+}
+
+section.row {
+    display: flex;
+    justify-content: center;
+    @include row-style;
+}
+
+@include footer((
+    sm: 768px,
+    xs: 480px
+));

@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./scss/history.scss">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul class="navigation">
-                <li>Вхід завжди вільний</li>
-                <li>10:00 до 5:00</li>
-                <li><a href="map.html">Розташування</a></li>
-            </ul>
-            <button class="pop-up button">navigation</button>
-        </nav>
-    </header>
+        <div class="header-info">
+          <div class="info-item">
+            <i class="icon-ticket"></i>
+            <span>Вхід завжди вільний</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-clock"></i>
+            <span>10:00 до 5:00</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-location"></i>
+            <a href="map.html" target="_blank">Розташування</a>
+          </div>
+        </div>
+        <div class="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>   
 
     <section class="history-row">
-        <div class="col-pict">
+        <div class="col-info">
             <p>історія митця</p>
             <h1>Олександр Мурашко: Відродження Генія</h1>
             <img src="public/images/OlexandrMurashko/OlexandrMurashko.png" alt="Олександр Мурашко">
@@ -27,17 +39,17 @@
     </section>
 
     <section class="arts">
-        <div class="artGirlInRedHat">
+        <div class="art">
             <h2>Портрет дівчини у червоному капелюшку</h2>
             <img src="public/images/OlexandrMurashko/artGirlInRedHat.png" alt="Портрет дівчини у червоному капелюшку"> 
             <p>Вишуканий образ сучасної жінки крізь призму модерну. Легкість і витонченість жіночої натури.</p>
         </div> 
-        <div class="artFair">
+        <div class="art">
             <h2>Ярмарок</h2>
             <img src="public/images/OlexandrMurashko/artFair.png" alt="Ярмарок"> 
             <p>Життєрадісна атмосфера українського ярмарку. Культурна спадщина, сповнена руху і барвистості.</p>
         </div> 
-        <div class="artPeasantFamily">
+        <div class="art">
             <h2>Селянська родина</h2>
             <img src="public/images/OlexandrMurashko/artPeasantFamily.png" alt="Селянська родина"> 
             <p>Сімейні цінності у сільському побуті. Глибокий і теплий погляд на життя українських селян.</p>
@@ -45,20 +57,29 @@
     </section>
 
     <footer>
-        <h2>Залишайся з нами</h2>
-        <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
-        <form action="/subscribe" method="post">
+        <div class="subscribe-section">
+          <h2>Залишайся з нами</h2>
+          <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
+          <form action="/subscribe" method="post">
             <input type="email" name="email" placeholder="Введи свою пошту" required>
             <button class="pop-up button">Sign Up</button>
-        </form>
-        <p class="bold">Зв’яжись з нами</p>
-        <p>+(380) 675 473 568</p>
-        <p>galeryofart@gmail.com</p>
-        <p class="bold">Заплануй візит</p>
-        <ul class="links">
-            <li><a href="events.html" target="_blank">Події</a></li>
-            <li><a href="map.html" target="_blank">Карта</a></li>
-        </ul>
-    </footer>
+          </form>
+        </div>
+        <div class="contact-section">
+          <div class="box">
+            <p class="bold">Зв’яжись з нами</p>
+            <p>+(380) 675 473 568</p>
+            <p>galeryofart@gmail.com</p>
+          </div>
+          <div class="box">
+            <p class="bold">Заплануй візит</p>
+            <ul class="links">
+              <li><a href="events.html" target="_blank">Події</a></li>
+              <li><a href="map.html" target="_blank">Карта</a></li>
+              <li><a href="history.html" target="_blank">Історії</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

@@ -1,0 +1,107 @@
+@import 'mixin.scss';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  #map-section {
+    padding: 20px;
+    text-align: center;
+  
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+  
+    #map-container {
+      width: 100%;
+      max-width: 500px;
+      height: 500px; // робить карту квадратною
+      margin: 0 auto;
+      border: 2px solid black; 
+      border-radius: 15px; // округлення рамки
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // тінь для кращого вигляду
+    }
+  
+    #filters {
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+  
+      label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #555;
+      }
+  
+      select, input[type="date"] {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #000;
+        color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: all 0.3s ease;
+  
+        &:focus {
+          border-color: #FFB200;
+          box-shadow: 0 0 8px rgba(255, 223, 0, 0.6);
+        }
+      }
+    }
+  
+    #message {
+      color: red;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+  
+  @mixin responsive($breakpoints) {
+    @each $label, $width in $breakpoints {
+      @media (max-width: $width) {
+        @content;
+      }
+    }
+  }
+  
+  @include responsive((
+    sm: 768px,
+    xs: 480px
+  )) {
+    #map-section {
+      h2 {
+        font-size: 24px;
+      }
+  
+      #map-container {
+        max-width: 100%; // адаптація під вузькі екрани
+        height: 300px;
+      }
+  
+      #filters {
+        flex-direction: column;
+  
+        select, input[type="date"] {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+@include footer((
+    sm: 768px,
+    xs: 480px
+));
+
+header {
+    @include header($bg-color: #000, $text-color: #fff, $icon-color: #f0a500);
+}

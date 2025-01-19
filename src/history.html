@@ -4,86 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./scss/allHist.scss">
 </head>
 <body>
     <header>
-        <a href=""></a>
-        <nav class="menu">
-            <ul class="navigation">
-                <li>Вхід завжди вільний</li>
-                <li>10:00 до 5:00</li>
-                <li><a href="map.html">Розташуваня</a></li>
-            </ul>
-            <button class="pop-up button"> navigation </button>
-        </nav>
-        <div class="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header-info">
+          <div class="info-item">
+            <i class="icon-ticket"></i>
+            <span>Вхід завжди вільний</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-clock"></i>
+            <span>10:00 до 5:00</span>
+          </div>
+          <div class="info-item">
+            <i class="icon-location"></i>
+            <a href="map.html" target="_blank">Розташування</a>
+          </div>
         </div>
-    </header>
+        <div class="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header> 
   
-    <section class="events-slide row">
+    <section class="events-slide-row">
         <div class="main-info">
             <h1>Історії</h1>
             <p>Discover inspiration and insights into art, creativity, and our shared humanity.</p>
         </div>
     </section>
   
-    <section class="history">
-        <div class="Ivan Marchuk">
-            <a href="IvanMarchuk.html" target="_blank">
+    <section class="row">
+        <div class="card">
+            <div class="img-wrapper">
                 <img src="public/images/IvanMarchuk/IvanMarchuk.png" alt="Іван Марчук">
-                <p>історія митця</p>
-                <h2>Іван Марчук: Визнання Майстра</h2>
-                <p>Один із найвизначніших сучасних українських художників, нарешті отримує належне визнання...</p>
-            </a>
-            <button class="pop-up button">Read more</button>
+            </div>
+            <div class="content">
+                <p class="type">історія митця</p>
+                <h2 class="title">Іван Марчук: Визнання Майстра</h2>
+                <p class="description">Один із найвизначніших сучасних українських художників, нарешті отримує належне визнання...</p>
+                <a href="IvanMarchuk.html" class="exh-link" target="_blank"> Now on View </a>
+            </div>
         </div>
-        <div class="Maria Priymachenko">
-            <a href="MariaPriymachenko.html" target="_blank">
+        <div class="card">
+            <div class="img-wrapper">
                 <img src="public/images/MariaPriymachenko/MariaPriymachenko.png" alt="Марія Приймаченко">
-                <p>історія мисткині</p>
-                <h2>Марія Приймаченко: Голос Душі</h2>
-                <p>Марія Приймаченко, легендарна українська художниця та майстриня народного мистецтва...</p>
-            </a>
-            <button class="pop-up button">Read more</button>
+            </div>
+            <div class="content">
+                <p class="type">історія мисткині</p>
+                <h2 class="title">Марія Приймаченко: Голос Душі</h2>
+                <p class="description">Марія Приймаченко, легендарна українська художниця та майстриня народного мистецтва...</p>
+                <a href="MariaPriymachenko.html" class="exh-link" target="_blank"> Now on View </a>
+            </div>
         </div>
-        <div class="Oleksandr Murashko">
-            <a href="OleksandrMurashko.html" target="_blank">
+        <div class="card">
+            <div class="img-wrapper">
                 <img src="public/images/OlexandrMurashko/OlexandrMurashko.png" alt="Олександр Мурашко">
-                <p>історія митця</p>
-                <h2>Олександр Мурашко: Відродження Генія</h2>
-                <p>Олександр Мурашко, один із провідних художників початку ХХ століття...</p>
-            </a>
-            <button class="pop-up button">Read more</button>
+            </div>
+            <div class="content">
+                <p class="type">історія митця</p>
+                <h2 class="title">Олександр Мурашко: Відродження Генія</h2>
+                <p class="description">Олександр Мурашко, один із провідних художників початку ХХ століття...</p>
+                <a href="OleksandrMurashko.html" class="exh-link" target="_blank"> Now on View </a>
+            </div>
         </div>
-        <div class="Kateryna Bilokur">
-            <a href="KaterynaBilokur.html" target="_blank">
+
+        <div class="card">
+            <div class="img-wrapper">
                 <img src="public/images/KaterynaBilokur/KaterynaBilokur.png" alt="Катерина Білокур">
-                <p>історія мисткині</p>
-                <h2>Катерина Білокур: Поезія Квітів</h2>
-                <p>Унікальна українська художниця-самоучка, перетворила квіти на мову мистецтва...</p>
-            </a>
-            <button class="pop-up button">Read more</button>
+            </div>
+            <div class="content">
+                <p class="type">історія мисткині</p>
+                <h2 class="title">Катерина Білокур: Поезія Квітів</h2>
+                <p class="description">Унікальна українська художниця-самоучка, перетворила квіти на мову мистецтва...</p>
+                <a href="KaterynaBilokur.html" class="exh-link" target="_blank"> Now on View </a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <h2>Залишайся з нами</h2>
-        <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
-        <form action="/subscribe" method="post">
+        <div class="subscribe-section">
+          <h2>Залишайся з нами</h2>
+          <p>Дізнавайся більше про наші виставки, новини, спеціальні пропозиції</p>
+          <form action="/subscribe" method="post">
             <input type="email" name="email" placeholder="Введи свою пошту" required>
             <button class="pop-up button">Sign Up</button>
-        </form>
-        <p class="bold">Зв’яжись з нами</p>
-        <p>+(380) 675 473 568</p>
-        <p>galeryofart@gmail.com</p>
-        <p class="bold">Заплануй візит</p>
-        <ul class="links">
-            <li><a href="events.html" target="_blank">Події</a></li>
-            <li><a href="map.html" target="_blank">Карта</a></li>
-        </ul>
+          </form>
+        </div>
+        <div class="contact-section">
+          <div class="box">
+            <p class="bold">Зв’яжись з нами</p>
+            <p>+(380) 675 473 568</p>
+            <p>galeryofart@gmail.com</p>
+          </div>
+          <div class="box">
+            <p class="bold">Заплануй візит</p>
+            <ul class="links">
+              <li><a href="events.html" target="_blank">Події</a></li>
+              <li><a href="map.html" target="_blank">Карта</a></li>
+              <li><a href="history.html" target="_blank">Історії</a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
 </body>
 </html>
